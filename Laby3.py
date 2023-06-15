@@ -1,32 +1,28 @@
-class Obj:
-    def __init__(self, softness, material, color): 
-        self._softness = softness
-        self._material = material
-        self._color = color
+class Hero:
+    def __init__(self, name, lvl, money):
+        self._name = name
+        self._lvl = lvl
+        self._money = money
 
-    def get_softness(self):
-        return self._softness
+    def setName(self, name):
+        self._name = name
 
-    def get_age(self):
-        return self._material
+    def setLvl(self, lvl):
+        self._lvl = lvl
 
-    def get_gender(self):
-        return self._color
+    def setMoney(self, money):
+        self._money = money
 
+    def getName(self):
+        return self._name
 
-    def set_softness(self, softness):
-        self._softness = softness
+    def getLvl(self):
+        return self._lvl
 
-    def set_age(self, material):
-        self._material = material
-
-    def set_gender(self, color):
-        self._color = color
-
-
-cube = Obj(False, "metal", "green")
+    def getMoney(self):
+        return self._money
 
 
+h = Hero("Enigma", 25 , 22600)
 
-
-print(f"Объект => Куб \nМягкий => {cube._softness}\nМатериал => {cube._material}\nЦвет => {cube._color}")
+print(f'Имя: {h._name}, Уровень: {h._lvl}, Деньги: {h._money}')
