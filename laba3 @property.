@@ -31,13 +31,13 @@ class Hero:
 
 
 
-h = Hero("Pangolier", 20, 21444)
+h = Hero("shadow fiend", 20, 21444)
 
 
 print(f'Имя: {h.name}, Уровень: {h.lvl}, Деньги: {h.money}')
 
 
-h.name = "Storm Spirit"
+h.name = "Enigma"
 h.lvl = 24
 h.money = 17600
 
